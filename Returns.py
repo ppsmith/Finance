@@ -14,7 +14,7 @@ def simpleRet(file):
         else:
             returns[i] = (prices.at[i+1]/prices.at[i]) - 1
             i += 1
-    return (file, returns)
+    return returns
 
 
 def logReturns(file):

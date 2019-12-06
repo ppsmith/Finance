@@ -30,7 +30,7 @@ def averagecomp(file):
         return("Two hundred day average larger than 50 day avertage,")
 
     if(TwoHundoDayAvg < FiftyDayAvg):
-        return ("200 daya verage less than 50 day average.")
+        return ("200 day average less than 50 day average.")
 
     else:
         return("ERROR: BAD LINK")

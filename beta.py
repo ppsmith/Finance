@@ -1,10 +1,12 @@
 import pandas as pd
 import numpy as np
 import Returns
+import tickerDict
 
 
 
 def beta(file):
-    returns = Returns.simpleRet(file)
+    returnsAsset = Returns.simpleRet(file)
+    returnsMarker = tickerDict.knownURL['ivv']
 
-    return (np.cov(returns))
+    return (np.cov(returnsAsset, returnsMarker)/np.var(returnsMarker))
